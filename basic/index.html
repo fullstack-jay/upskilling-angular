@@ -5,20 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <title>UPSKILLING - HTML CSS JS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100">
-    <header class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-4">
-        <h1 class="text-2xl font-bold">Header Web Sederhana</h1>
-      </div>
-    </header>
+  <body>
+    <!-- Tag Tag HTML -->
+    <!-- Heading -->
+    <!-- Heading 1-6 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- Paragraph -->
+    <p>Ini Paragraph</p>
+    <!-- List -->
+    <!-- 1. Unordered; 2. Ordered; 3. Description List -->
+    <!-- Note: ul hanya menghasilkan bullet point -->
+    <ul>
+      <li>Golang</li>
+      <ol>
+        <li>Pengantar</li>
+        <ul>
+          <li>Sejarah</li>
+          <li>Instalasi</li>
+          <li>Setup</li>
+        </ul>
+        <li>Pemrograman pertama</li>
+      </ol>
+      <li>Java</li>
+      <li>Angular</li>
+    </ul>
 
-    <main class="container mx-auto px-4 py-8">
-      <button id="show" class="bg-blue-500 text-white px-4 py-2 rounded">
-        Click Me
-      </button>
-    </main>
-    <script src="../js/script.js"></script>
+    <!-- Note: ol akan berurutan nomernya -->
+    <ol>
+      <li>Golang</li>
+      <li>Java</li>
+      <li>Angular</li>
+    </ol>
+    <!-- Image -->
+    <img src="https://enigmacamp.com/_net/image?url=%2Ficons%2Fenigma-logo-home.png&w=256&q=75" alt="Logo Enigma Camp">
+    <!-- Table -->
+     <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Abdul</td>
+                <td>Golang</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jamal</td>
+                <td>Java</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Form -->
+     <form action="">
+        <input type="text" value="" name="fullname"> 
+        <input type="radio" value="Laki-Laki" name="sex"/> Laki-Laki 
+        <input type="radio" value="Perempuan" name="sex"/> Perempuan
+        <input type="checkbox" value="Golang" name="language"> Golang
+        <input type="checkbox" value="Java" name="language"> Java 
+        <input type="checkbox" value="React" name="language"> React 
+        <input type="checkbox" value="Angular" name="language"> Angular
+        <textarea name="about" id="" rows="10"></textarea>
+
+        <select name="province" id="">
+            <option value="1">JAKARTA</option>
+            <option value="2">BANTEN</option>
+        </select>
+        <button>Simpan</button>
+    </form>
+    <!-- Semantic HTML -->
+     <!-- Sebelum diterapkan Semantic HTML -->
+    <div>Header</div>
+    <div>Left</div>
+    <div>Right</div>
+    <div>Body</div>
+    <div>Footer</div>
+
+    <!-- Sesudah diterapkan Semantic HTML -->
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <div class="container">
+        <section></section>
+    </div>
+    <footer></footer>
+    <!-- Dst -->
   </body>
 </html>
